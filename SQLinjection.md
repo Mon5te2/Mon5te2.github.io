@@ -34,7 +34,7 @@ Hacker ที่ต้องการทำ SQL injection จะใช้คำ�
 
 ตัวอย่าง เมื่อดึงข้อมูล input ของผลิตภัณฑ์ มา ซึ่ง Hacker สามารถแก้ไขเพื่ออ่าน HTTPได้ เช่น http://www.store.com/items/items.asp?itemid=999 หรือ 1=1 เป็นผลให้แบบ SQL query ที่เกี่ยวข้องมีลักษณะดังนี้:
 
-SELECT ItemName, ItemDescription
+>SELECT ItemName, ItemDescription
 FROM Items
 WHERE ItemNumber = 999 OR 1=1
 
@@ -44,7 +44,7 @@ Hacker ยังสามารถใช้ประโยชน์จาก cha
 
 ตัวอย่างเช่น input นี้ คือ http://www.store.com/items/iteams.asp?itemid=999; ผู้ใช้ DROP TABLE จะสร้าง SQL query ต่อไปนี้:
 
-SELECT ItemName, ItemDescription
+>SELECT ItemName, ItemDescription
 FROM Items
 WHERE ItemNumber = 999; DROP TABLE USERS
 

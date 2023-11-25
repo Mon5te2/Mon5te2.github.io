@@ -47,3 +47,6 @@ Here is an example of the encryption and decryption steps involved with the Caes
 
 + Plaintext: defend the east wall of the castle
 + Ciphertext: efgfoe uif fbtu xbmm pg uif dbtumf 
+
+
+> **https://www.techtarget.com/whatis/definition/ciphertext**

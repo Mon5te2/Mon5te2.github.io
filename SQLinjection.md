@@ -80,3 +80,8 @@ Code นี้สามารถเขียนใหม่ได้ในลั
 Parameterized queries สามารถใช้กับสถานการณ์ต่างๆ ที่ input ที่ไม่น่าเชื่อถือเกิดเป็นข้อมูลภายใน Query รวมถึงคำสั่ง WHERE และค่าในคำสั่ง INSERT หรือ UPDATE ซึ่งคำสั่งเหล่านี้ไม่สามารถใช้เพื่อจัดการกับ input ที่ไม่น่าเชื่อถือได้ และใช้ในส่วนอื่นๆ ของ Query เช่น ชื่อตารางหรือคอลัมน์ หรือ ORDER BY clause
 ฟังก์ชันการทำงานของ Application ที่ใส่ข้อมูลที่ไม่น่าเชื่อถือลงใน query จะต้องใช้วิธีการอีกแบบหนึ่ง เช่น การอนุญาตค่า input values หรือการใช้ตรรกะที่แตกต่างกันเพื่อ deliver พฤติกรรม
 เพื่อให้ query แบบกำหนดพารามิเตอร์มีประสิทธิภาพในการป้องกัน SQL injection และ string ที่ใช้ใน query ต้องเป็นค่า hard-coded constant และต้องไม่มีข้อมูลตัวแปรจากจุดเริ่มต้น ซึ่งเราจะสามารถใช้วิธีเหล่านี้ป้องกันได้ค่ะ
+
+**_Reference:_**
+\**_https://www.imperva.com/learn/application-security/sql-injection-sqli/_**
+
+\**_https://portswigger.net/web-security/sql-injection_**

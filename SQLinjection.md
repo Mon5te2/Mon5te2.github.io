@@ -83,6 +83,6 @@ Parameterized queries สามารถใช้กับสถานการ�
 
 **_Reference:_**
 
-**_https://www.imperva.com/learn/application-security/sql-injection-sqli/_**
++ **_https://www.imperva.com/learn/application-security/sql-injection-sqli/_**
 
-**_https://portswigger.net/web-security/sql-injection_**
++ **_https://portswigger.net/web-security/sql-injection_**

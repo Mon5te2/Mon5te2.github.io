@@ -82,6 +82,6 @@ Parameterized queries สามารถใช้กับสถานการ�
 เพื่อให้ query แบบกำหนดพารามิเตอร์มีประสิทธิภาพในการป้องกัน SQL injection และ string ที่ใช้ใน query ต้องเป็นค่า hard-coded constant และต้องไม่มีข้อมูลตัวแปรจากจุดเริ่มต้น ซึ่งเราจะสามารถใช้วิธีเหล่านี้ป้องกันได้ค่ะ
 
 **_Reference:_**
-\**_https://www.imperva.com/learn/application-security/sql-injection-sqli/_**
+**_https://www.imperva.com/learn/application-security/sql-injection-sqli/_**
 
-\**_https://portswigger.net/web-security/sql-injection_**
+**_https://portswigger.net/web-security/sql-injection_**

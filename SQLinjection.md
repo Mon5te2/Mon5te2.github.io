@@ -85,6 +85,6 @@ Parameterized queries สามารถใช้กับสถานการ�
 
 **_Reference:_**
 
-**_https://www.imperva.com/learn/application-security/sql-injection-sqli/_**
+> https://www.imperva.com/learn/application-security/sql-injection-sqli/
 
-**_https://portswigger.net/web-security/sql-injection_**
+> https://portswigger.net/web-security/sql-injection

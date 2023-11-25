@@ -54,7 +54,7 @@ WHERE ItemNumber = 999; DROP TABLE USERS
 
 ตัวอย่างเช่น การป้อนข้อมูล http://www.store.com/items/items.asp?itemid=999 username UNION SELECT กับ password FROM USERS จะสร้าง SQL query ต่อไปนี้:
 
-SELECT ItemName, ItemDescription
+>SELECT ItemName, ItemDescription
 FROM Items
 WHERE ItemID = ‘999’ UNION SELECT Username, Password FROM Users;
 

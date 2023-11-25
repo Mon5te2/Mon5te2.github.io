@@ -63,19 +63,19 @@ WHERE ItemID = ‘999’ UNION SELECT Username, Password FROM Users;
 **_การป้องกัน SQL Injection_**
 สามารถป้องกันได้โดยการ Query แบบกำหนดพารามิเตอร์ (หรือเรียกอีกอย่างว่าprepared statements) แทนการต่อ string ภายในquery
 
->String query = “SELECT * FROM products WHERE category = ‘“+ input + “‘“;
+>_String query = “SELECT * FROM products WHERE category = ‘“+ input + “‘“;_
 
->Statement statement = connection.createStatement();
+>_Statement statement = connection.createStatement();_
 
->ResultSet resultSet = statement.executeQuery(query);
+>_ResultSet resultSet = statement.executeQuery(query);_
 
 Code นี้สามารถเขียนใหม่ได้ในลักษณะที่ป้องกันไม่ให้ user input ข้อมูลรบกวน query structure :
 
->PreparedStatement statement = connection.prepareStatement(“SELECT * FROM products WHERE category = ?”);
+>_PreparedStatement statement = connection.prepareStatement(“SELECT * FROM products WHERE category = ?”);_
 
->statement.setString(1, input);
+>_statement.setString(1, input);_
 
->ResultSet resultSet = statement.executeQuery();
+>_ResultSet resultSet = statement.executeQuery();_
 
 Parameterized queries สามารถใช้กับสถานการณ์ต่างๆ ที่ input ที่ไม่น่าเชื่อถือเกิดเป็นข้อมูลภายใน Query รวมถึงคำสั่ง WHERE และค่าในคำสั่ง INSERT หรือ UPDATE ซึ่งคำสั่งเหล่านี้ไม่สามารถใช้เพื่อจัดการกับ input ที่ไม่น่าเชื่อถือได้ และใช้ในส่วนอื่นๆ ของ Query เช่น ชื่อตารางหรือคอลัมน์ หรือ ORDER BY clause
 ฟังก์ชันการทำงานของ Application ที่ใส่ข้อมูลที่ไม่น่าเชื่อถือลงใน query จะต้องใช้วิธีการอีกแบบหนึ่ง เช่น การอนุญาตค่า input values หรือการใช้ตรรกะที่แตกต่างกันเพื่อ deliver พฤติกรรม

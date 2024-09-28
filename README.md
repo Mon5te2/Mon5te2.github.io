@@ -12,4 +12,6 @@ Certificate
 + [DARKWEB](DARKWEB)
   
 Digital Badges
-
++ [Generative Al Overview for Project Managers](Generative Al Overview for Project Managers)
++ [Fundamentals of Predictive Project Management](Fundamentals of Predictive Project Management)
++ [Fundamentals of Agile Project Management](Fundamentals of Agile Project Management)
